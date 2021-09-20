@@ -1,9 +1,13 @@
 # Job_Analysis
 
-web scraping
+web scraping Singapore Data Scientist jobs information as of month-to-date till 19 September 2021. (1993 samples)
+
+## OBJECTIVES
+to show which skills are more preferred for Data Scientist.
+
 
 ## BACKGROUND
-practice web scraping
+first time on practicing web scraping
 
 
 
