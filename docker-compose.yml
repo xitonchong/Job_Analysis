@@ -1,0 +1,27 @@
+version: '2'
+services:
+  notebook:
+    build:
+      context: .
+    container_name: jupyter_selenium
+    volumes:
+      - /mnt/md0/work/work:/home/jovyan
+    environment:
+      JUPYTER_ENABLE_LAB: 'yes'
+    ports:
+      - "8888:8888"
+    command: ["jupyter", "notebook", "--no-browser","--NotebookApp.token=''","--NotebookApp.password=''"]
+
+  chrome:
+    image: selenium/node-chrome:3.14.0-gallium
+    volumes:
+      - /dev/shm:/dev/shm
+    depends_on:
+      - hub
+    environment:
+      HUB_HOST: hub
+
+  hub:
+    image: selenium/hub:3.14.0-gallium
+    ports:
+      - "4444:4444"
