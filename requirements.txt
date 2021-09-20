@@ -1,2 +1,5 @@
 #selenium
 python-dotenv
+wordcloud 
+nltk
+seaborn
