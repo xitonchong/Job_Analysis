@@ -9,7 +9,9 @@ to show which skills are more preferred for Data Scientist.
 ## BACKGROUND
 first time on practicing web scraping
 
-
+## Selenium Hub Docker
+to start:  docker-compose up -d  
+to shutdown: docker-compose down
 
 
 
